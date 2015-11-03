@@ -289,6 +289,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.custom_ecc=1
 
+# Miracast support
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.debug.wfd.enable=1
+
 # Enable Wifi calling
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.iwlan.enable=true
