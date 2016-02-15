@@ -132,6 +132,12 @@ TARGET_GCC_VERSION_EXP := 4.9
 
 # Include an expanded selection of fonts
 EXTENDED_FONT_FOOTPRINT := true
-
+TARGET_GCC_VERSION_ARM64 := 4.9
+TARGET_KERNEL_SOURCE := kernel/huawei/angler
+TARGET_KERNEL_CONFIG := saber_defconfig
+BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
+# Kernel Toolchain
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-4.9/bin
+KERNEL_TOOLCHAIN_PREFIX := aarch64-linux-android-
 -include vendor/huawei/angler/BoardConfigVendor.mk
 
