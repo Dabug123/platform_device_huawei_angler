@@ -133,22 +133,5 @@ TARGET_GCC_VERSION_EXP := 4.9
 # Include an expanded selection of fonts
 EXTENDED_FONT_FOOTPRINT := true
 
-TARGET_GCC_VERSION_ARM64 := 5.3
-
-TARGET_KERNEL_SOURCE := kernel/huawei/angler
-TARGET_KERNEL_CONFIG := kylo_defconfig
-BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
-
-# Kernel Toolchain
-KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-5.3-kernel/bin
-KERNEL_TOOLCHAIN_PREFIX := aarch64-linux-android-
-
-# Uber Optimizations
-export CLANG_O3 := true
-export STRICT_ALIASING := false
-export KRAIT_TUNINGS := false
-export GRAPHITE_OPTS := false
-export ENABLE_GCCONLY := true
-
 -include vendor/huawei/angler/BoardConfigVendor.mk
 
