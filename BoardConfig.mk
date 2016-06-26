@@ -147,7 +147,7 @@ KERNEL_TOOLCHAIN_PREFIX := aarch64-linux-android-
 export CLANG_O3 := true
 export STRICT_ALIASING := false
 export KRAIT_TUNINGS := false
-export GRAPHITE_OPTS := false
+export GRAPHITE_OPTS := true
 export ENABLE_GCCONLY := true
  
 -include vendor/huawei/angler/BoardConfigVendor.mk
