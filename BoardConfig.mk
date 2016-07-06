@@ -136,7 +136,7 @@ EXTENDED_FONT_FOOTPRINT := true
 TARGET_GCC_VERSION_ARM64 := 4.9
 
 TARGET_KERNEL_SOURCE := kernel/huawei/angler
-TARGET_KERNEL_CONFIG := saber_defconfig
+TARGET_KERNEL_CONFIG := angler_defconfig
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 
 # Kernel Toolchain
@@ -144,7 +144,7 @@ KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aa
 KERNEL_TOOLCHAIN_PREFIX := aarch64-linux-android-
 
 # Uber Optimizations
-export CLANG_O3 := true
+export CLANG_O3 := false
 export STRICT_ALIASING := false
 export KRAIT_TUNINGS := false
 export GRAPHITE_OPTS := false
