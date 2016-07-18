@@ -1,0 +1,12 @@
+[
+ {
+   "repository":  "Dabug123/owlCore64",
+   "target_path": "kernel/huawei/angler",
+   "branch":      "saberTest-p-uber"
+ },
+ {
+   "repository":  "AOSIP-Devices/platform_vendor_huawei",
+   "target_path": "vendor/huawei",
+   "branch":      "mm6.0"
+ }
+]
